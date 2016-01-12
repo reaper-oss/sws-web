@@ -1,6 +1,5 @@
 IndexOptions FancyIndexing FoldersFirst SuppressHTMLPreamble
 IndexOrderDefault Descending Name
 #
-# Fichiers header et footer (2 fichiers placés dans la racine du site)
-HeaderName /pre_header.html
-ReadmeName /pre_footer.html
+HeaderName /header_downloads.html
+ReadmeName /footer_downloads.html

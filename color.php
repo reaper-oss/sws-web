@@ -1,7 +1,10 @@
 <?php
-$html = file_get_contents('header_features.html');
+$html = file_get_contents('header.html');
 echo $html;
 ?>
+
+<div class="information-section">
+<div class="container">
 
 <h1>Color Utilities</h1>
 <p>The color utilities included in the SWS extension allow easier setting of track and item colors. You know those 16 colors that you can set in the Reaper color dialog as &quot;custom&quot; colors for your tracks and items? Now these are available directly in the menu for tracks and items as shown here:<br />
@@ -62,6 +65,9 @@ SWS: Set selected item(s) to custom color 1<br />
 ...<br />
 SWS: Set selected item(s) to custom color 16<br />
 </p>
+
+</div>
+</div>
 
 <?php
 $html = file_get_contents('footer.html');

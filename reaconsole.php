@@ -1,7 +1,10 @@
 <?php
-$html = file_get_contents('header_features.html');
+$html = file_get_contents('header.html');
 echo $html;
 ?>
+
+<div class="information-section">
+<div class="container">
 
 <h1>ReaConsole</h1>
 <p><img height="100" width="263" src="/images/screenshots/reaconsole.png" alt="" /></p>
@@ -97,6 +100,9 @@ The Cycle Action editor features an instruction "CONSOLE" to run ReaConsole comm
     <li>Track names with strictly numerical names or containing '*',&nbsp;'-',&nbsp;',', '/', or ';' can't be selected reliably by name.</li>
 </ol>
 <p>&nbsp;</p>
+
+</div>
+</div>
 
 <?php
 $html = file_get_contents('footer.html');

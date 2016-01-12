@@ -1,7 +1,10 @@
 <?php
-$html = file_get_contents('header_features.html');
+$html = file_get_contents('header.html');
 echo $html;
 ?>
+
+<div class="information-section">
+<div class="container">
 
 <h1>Snapshots</h1>
 <p>The snapshots window allows you to save selected track parameters for recall later.&nbsp; There snapshots are saved in the project file.</p>
@@ -56,6 +59,9 @@ An example macro is:</p>
     <li>SWS: Save current snapshot filter options</li>
     <li>SWS: Restore snapshot filter options</li>
 </ul>
+
+</div>
+</div>
 
 <?php
 $html = file_get_contents('footer.html');

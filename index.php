@@ -1,71 +1,13 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
-
-	<meta charset="utf-8">
-	<title>SWS / S&amp;M Extension</title>
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta name="description" content="SWS / S&amp;M Extension, a REAPER plugin extension">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!-- Mobile Specific Metas -->
-
-  	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' type='text/css'>
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/skeleton.css">
-	<link rel="stylesheet" href="css/layout.css">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
-</head>
-
-<body>
+<?php
+$header = file_get_contents('header.html');
+echo $header;
+?>
 
 <?php include 'version.php'; ?>
 
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Header Section -->
-	<div class="header-section">
-		<div class="container">
-			<div class="eight columns">
-				<h1>SWS/S&amp;M EXTENSION</h1>
-				<h2>A REAPER PLUGIN EXTENSION</h2>
-				The SWS / S&amp;M extension is a collection of features that seamlessly integrate into <a href="http://www.reaper.fm">REAPER</a>, the Digital Audio Workstation (DAW) software by <a href="http://www.cockos.com">Cockos, Inc.</a><br />
-				It is a collaborative and open source project.<br />
-				<br />
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-					<input type="image" src="http://www.sws-extension.org/images/donate.jpg" border="0" name="submit" alt="PayPal">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-				</form>
-			</div>
-			<div class="eight columns">
-				<center>
-				<img src="images/product-shot.png" alt="SWS/S&amp;M Extension" class="scale-with-grid" />
-				</center>
-				<br />
-			</div>
-		</div><!-- close container -->
-	</div><!-- close header section -->
-
-
-<!-- Download Section -->
+	<!-- DOWNLOAD -->
 	<div class="information-section">
-
 		<div class="container">
-
-			<!-- FEATURED DOWNLOAD -->
 			<div class="row">
 
 				<center>
@@ -126,12 +68,13 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- close download section -->
+	</div>
 
-	<!-- Gallery Section -->
+
+
+	<!-- ABOUT -->
 	<div class="gallery-section">
 		<div class="container">
-
 			<div class="row">
 
 				<center>
@@ -221,9 +164,11 @@ You can submit a bug report or a feature request in our <a href="https://github.
 
 
 		</div><!-- close container -->
-	</div><!-- close gallery section -->
+	</div>
 
 
+
+	<!-- FEATURES -->
 	<div class="information-section">
 		<div class="container">
 
@@ -298,28 +243,14 @@ Region playlist (non-linear play), <a href="download/S&amp;M_LiveConfigs_Ed2.pdf
 				</div>
 			</div>
 
-
 		<br />
 		<br />
 
-
-		</div><!-- close container -->
-	</div><!-- close download section -->
-
-
-
-	<!-- Footer Section -->
-	<div class="gallery-section">
-		<div class="container">
-			<center>
-			<a href="index.php">Home</a> - <a href="index.php#about">About</a> - <a href="index.php#download_featured">Download</a> - <a href="index.php#features">Features</a><br />
-			Copyright &copy; 2014 and later SWS/S&amp;M extension.<br />
-                        Made by hand with notepad.
-			</center>
 		</div>
 	</div>
 
-<!-- End Document
-================================================== -->
-</body>
-</html>
+
+<?php
+$html = file_get_contents('footer.html');
+echo $html;
+?>

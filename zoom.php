@@ -1,7 +1,10 @@
 <?php
-$html = file_get_contents('header_features.html');
+$html = file_get_contents('header.html');
 echo $html;
 ?>
+
+<div class="information-section">
+<div class="container">
 
 <h1>Zoom + Scroll</h1>
 <p>This category of actions allows simple, one key zoom in and out, as well as other zoom features, depending on the actions you pick.&nbsp;<br />
@@ -35,6 +38,9 @@ To enable and/or tweak zoom features: Main menu > Extension > Zoom preferences..
 <br />
 <br />
 <br />
+
+</div>
+</div>
 
 <?php
 $html = file_get_contents('footer.html');

@@ -1,7 +1,10 @@
 <?php
-$html = file_get_contents('header_features.html');
+$html = file_get_contents('header.html');
 echo $html;
 ?>
+
+<div class="information-section">
+<div class="container">
 
 <h1>Project Management</h1>
 <br />
@@ -41,6 +44,9 @@ To create the link, select &quot;Add related project...&quot; and browse to your
 <br />
 <br />
 <br />
+
+</div>
+</div>
 
 <?php
 $html = file_get_contents('footer.html');

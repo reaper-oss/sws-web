@@ -1,7 +1,10 @@
 <?php
-$html = file_get_contents('header_features.html');
+$html = file_get_contents('header.html');
 echo $html;
 ?>
+
+<div class="information-section">
+<div class="container">
 
 <h1>Marker Actions</h1>
 <p>This feature (also called &quot;macro markers&quot;) allows you to place any Reaper action as a marker, and have that action ran when the play cursor crosses over that marker.</p>
@@ -22,6 +25,9 @@ You can get a list of all of Reaper's Command IDs by scrolling to the right in t
     <li>SWS: Disable marker actions</li>
 </ul>
 <p>&nbsp;</p>
+
+</div>
+</div>
 
 <?php
 $html = file_get_contents('footer.html');
