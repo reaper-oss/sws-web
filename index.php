@@ -288,7 +288,7 @@ ReaConsole is a keyboard command interface for common track tasks. Learn more <a
 				</div>
 				<div class="one-third column info">
 <h3>Notes</h3><br />
-This window allows you to write custom notes for projects, tracks, etc but also for marker and regions. They can follow playback too (subtitles, lyrics, etc). Demo <a href="http://reaper.mj-s.com/S&amp;M_big_notes.gif">here</a>.
+This window allows you to write custom notes for projects, tracks, etc but also for marker and regions. They can follow playback too (subtitles, lyrics, etc). Demo <a href="./images/screenshots/S&amp;M_big_notes.gif">here</a>.
 				</div>
 				<div class="one-third column info">
 <h3>... and many other things !</h3><br />
