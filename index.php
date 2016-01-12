@@ -10,15 +10,16 @@ echo $header;
 		<div class="container">
 			<div class="row">
 
-				<center>
-				<h2>
-					LASTEST STABLE VERSION<a name="download_featured">&nbsp;</a><br />
-					<?php echo GetVersionStr("featured"); ?> - <a href="whatsnew.php">What's new?</a><br />
-					Requires <a href="http://www.reaper.fm/download.php">REAPER <?php echo GetReaperVersionStr("featured"); ?></a> or above<br />
-				</h2>
-				<br />
-				<br />
-				</center>
+<center>
+<h2>DOWNLOAD THE SWS EXTENSION<a name="download_featured">&nbsp;</a></h2><br />
+<h2>
+Latest stable version: 
+<?php echo GetVersionStr("featured"); ?> - <a href="whatsnew.php">What's new?</a><br />
+Requires <a href="http://www.reaper.fm/download.php">REAPER <?php echo GetReaperVersionStr("featured"); ?></a> or above<br />
+</h2>
+<br />
+<br />
+</center>
 
 				<div class="one-third column info">
 					<center>
@@ -87,17 +88,20 @@ echo $header;
 "SWS" stands for "Standing Water Studios". It is <a href="http://forum.cockos.com/member.php?u=6434">Tim Payne</a>'s project studio.
 It's aptly named as all of the incarnations of the recording space have flooded at one time or another. Tim is the project founder.<br />
 <br />
-The "S&amp;M" bit would stand for "Simple &amp; Mighty", or would have been inspired by this <a href="http://www.askjf.com/index.php?q=484s">quote</a>...
+Not sure about the "S&amp;M" bit though... "Simple &amp; Mighty"? Inspired by this <a href="http://www.askjf.com/index.php?q=484s">quote</a>?
 Well, the only justification <a href="http://forum.cockos.com/member.php?u=11336">Jeffos</a> could provide is that '&amp;' was an efficient filter in the action list (and fun, code-wise).
 Jeffos is a project owner, together with Tim.<br />
 <br />
-There is a dozen of project members, including
+The extension is poorly named, it is a collaborative project actually:
 <a href="http://forum.cockos.com/member.php?u=27094">Breeder</a> and 
-<a href="http://forum.cockos.com/member.php?u=18458">Fingers</a> who have contributed popular tools,
+<a href="http://forum.cockos.com/member.php?u=18458">Fingers</a> have contributed popular tools,
 but also <a href="http://forum.cockos.com/member.php?u=3602">Xenakios</a>,
-<a href="http://forum.cockos.com/member.php?u=2949">IXix</a>, <a href="http://forum.cockos.com/member.php?u=473">Shane</a>,
-<a href="http://forum.cockos.com/member.php?u=8580">Adam Wathan</a>, <a href="http://forum.cockos.com/member.php?u=16297">Padre_PC</a>,
-<a href="http://forum.cockos.com/member.php?u=52462">Brad</a>, and <a href="http://forum.cockos.com/member.php?u=70153">Wol</a>.<br />
+<a href="http://forum.cockos.com/member.php?u=2949">IXix</a>, 
+<a href="http://forum.cockos.com/member.php?u=473">Shane</a>, 
+<a href="http://forum.cockos.com/member.php?u=8580">Adam Wathan</a>, 
+<a href="http://forum.cockos.com/member.php?u=16297">Padre_PC</a>, 
+<a href="http://forum.cockos.com/member.php?u=52462">Brad</a>, and 
+<a href="http://forum.cockos.com/member.php?u=70153">Wol</a>.<br />
 <br />
 				</div>
 				<div class="one-third column info">
@@ -106,7 +110,7 @@ Donations go to a common wallet which covers website costs at the moment. The re
 A vacation fund so we can visit Cockos? Hire Geoffrey Francis to write a manual update?<br />
 Well, this is yet to be defined but make sure we are not making money out of this project: it is only led by passion...<br />
 <br />
-You can also donate to contributors who have a direct donation account: <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=CDQDHPRX7UYY2">Wol</a>, <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q64NF4QCJS3ZJ">Breeder</a>, and <a href="http://reaper.mj-s.com">Jeffos</a>.<br />
+Some contributors also have a direct donation account: <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=CDQDHPRX7UYY2">Wol</a>, <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q64NF4QCJS3ZJ">Breeder</a>, and <a href="http://reaper.mj-s.com">Jeffos</a>.<br />
 <br />
 Thank you for supporting the project!
 				</div>
@@ -173,8 +177,11 @@ You can submit a bug report or a feature request in our <a href="https://github.
 		<div class="container">
 
 			<center>
-				<h2>SOME<a name="features">&nbsp;</a>FEATURES...</h2><br />
-				<br />
+<h2>SOME<a name="features">&nbsp;</a>FEATURES...</h2><br />
+<h2>Please note these documents, screenshots, etc might be outdated and/or incomplete.<br />
+They are provided in the hope that they will help you in getting started...</h2>
+<br />
+<br />
 			</center>
 
 			<div class="row">
