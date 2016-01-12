@@ -1,0 +1,161 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+
+/* Header Section
+================================================== */
+.header-section{
+	padding-top: 50px;
+/* JFB	background: url('../images/dark-bg-top.png') repeat-x bottom;*/
+}
+.social-media{ float: right;}
+.social-media li{
+	float: left; 
+	text-indent: -9999px;
+}
+
+/*JFB
+
+.social-media li.share{
+	text-indent: 0px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	display: block;
+	font-size: 24px;
+	padding: 12px 10px 0px 0px;
+}
+.social-media li a{
+	width:44px; height: 42px;
+	display: block;
+	background: url('../images/social-icon-sheet.png') no-repeat;
+}
+.social-media li a.twitter{background-position: 0px 0px;}
+.social-media li a.twitter:hover{background-position: 0px -41px;}
+.social-media li a.facebook{background-position: -44px 0px;}
+.social-media li a.facebook:hover{background-position: -44px -41px;}
+.social-media li a.stumble{background-position: -89px 0px;}
+.social-media li a.stumble:hover{background-position: -89px -41px;}
+.social-media li a.vimeo{background-position: -134px 0px;}
+.social-media li a.vimeo:hover{background-position: -134px -41px;}
+
+*/
+
+.action{display: block; padding-top: 20px;}
+.or{
+	display: inline-block; 
+	margin: 0px 10px; 
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: normal;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+/* #Information Section
+================================================== */
+.information-section{
+	border-top:5px solid #2b2626; /* JFB added */
+	background: #0e0100;
+	padding:40px 0px 1px 0px;
+}
+.info{margin-bottom: 20px;}
+
+h3{display: inline-block;}
+i{
+	display: inline-block;
+	width:50px; height: 50px;
+	background: url('../images/icon-sheet.png') no-repeat;
+}
+
+/*JFB
+
+i.icon-2{ background-position: -50px 0px;}
+i.icon-3{ background-position: -100px 0px;}
+i.icon-4{ background-position: 0px -50px;}
+i.icon-5{ background-position: -50px -50px;}
+i.icon-6{ background-position: -100px -50px;}
+
+*/
+
+/* #Gallery Section
+================================================== */
+.gallery-section{
+	border-top:5px solid #2b2626; /* JFB added */
+	padding: 40px 0px;
+}
+.img-grid img{border:5px solid #463b37;}
+.main-img{margin-bottom: 15px;}
+
+a.lrg-thumb{
+	position: relative;
+	display: block;
+	width:508px; height: 290px;
+	margin-bottom: 30px;
+}
+a.sml-thumb{
+	position: relative;
+	display: block;
+	width:150px; height: 120px;
+}
+a span.thumb-shade{
+	display: none;
+	position:absolute; 
+	left:5px; top:5px; 
+	width: inherit; height: inherit;
+	background: url('../images/thumb-shade.png');
+}
+a span.thumb-zoom{
+	display:none;
+	position:absolute; 
+	width: 57px; height: 57px;
+	z-index: 10;
+	background:url('../images/zoom-icon.png') no-repeat;
+}
+a.lrg-thumb span.thumb-zoom{left:45%; top:42%;}
+a.sml-thumb span.thumb-zoom{left:36%; top:32%;}
+
+
+/* #Footer
+================================================== */
+.footer{
+	border-top:5px solid #2b2626;
+	background: #0e0100;
+	padding: 15px 0px;
+}
+.copyright p {float: right; padding-top: 5px;}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		button {padding: 10px 20px;}
+		.action{margin-bottom: 40px;}
+
+		a.lrg-thumb{
+			width:100%; height:auto !important;
+			margin-bottom: 10px;
+		}
+		a.sml-thumb, a.sml-thumb img {width:98%}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		a.sml-thumb {display: none;}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
