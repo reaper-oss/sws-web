@@ -7,7 +7,7 @@ echo $header;
 <div class="container">
 
 <?php
-$html = file_get_contents('./download/featured/index.html');
+$html = file_get_contents('./download/featured/whatsnew.html');
 echo $html;
 ?>
 
