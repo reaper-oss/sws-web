@@ -148,9 +148,9 @@ Training videos by <a href="http://www.groove3.com/str/reaper-sws-extensions.htm
 				<div class="one-third column info">
 <h3>Additional downloads</h3>
 <ul style="margin-top:0px;margin-bottom:0px;">
-	<li>Old featured versions: <a href="download/featured/old/">here</a></li>
-	<li>All versions older than v2.4.0 #3: <a href="https://code.google.com/p/sws-extension/downloads/list?can=1">here</a></li>
-	<li>Last PPC build (v2.4.0 #1): <a href="download/featured/old/sws-v2.4.0.1-LAST_PPC.dmg">here</a></li>
+	<li>Old versions: <a href="download/old/">here</a></li>
+	<li>Versions older than v2.4.0 #3: <a href="https://code.google.com/p/sws-extension/downloads/list?can=1">here</a></li>
+	<li>Last PPC build (v2.4.0 #1): <a href="download/old/sws-v2.4.0.1-LAST_PPC.dmg">here</a></li>
 	<li><a href="http://forum.cockos.com/showpost.php?p=941893&amp;postcount=810">Translate or customize</a> the extension thanks to the <a href="<?php print GetLangPack("featured"); ?>">Template LangPack</a> (latest version)</li>
 </ul>
 				</div>
