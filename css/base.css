@@ -229,6 +229,7 @@
 		background: linear-gradient(to bottom,  #181818 0%,#363636 87%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181818', endColorstr='#363636',GradientType=0 ); /* IE6-9 */
 
+	  min-width: 220px;
 	  border: 1px solid #414140;
 	  border-top: 1px solid #414140;
 	  border-left: 1px solid #414140;

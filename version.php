@@ -52,11 +52,20 @@
 	function GetVersion($dir)
 	{
 		$key = $dir."SWS_VERSION";
-		return "v".$GLOBALS[$key][0].".".$GLOBALS[$key][1].".".$GLOBALS[$key][2].".".$GLOBALS[$key][3];
+		return $GLOBALS[$key][0].".".$GLOBALS[$key][1].".".$GLOBALS[$key][2].".".$GLOBALS[$key][3];
 	}
-
-	function GetWin32($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-install.exe"; }
-	function GetWin64($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-x64-install.exe"; }
+	
+	/* deprecated */
 	function GetOSX($dir) { return "download/".$dir."/sws-".GetVersion($dir).".dmg"; }
+
+	function GetWin32($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-Windows-x86.exe"; }
+	function GetWin64($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-Windows-x64.exe"; }
+	function GetOSX32($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-Darwin-i386.dmg"; }
+	function GetOSX64($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-Darwin-x86_64.dmg"; }
+	function GetOSXArm64($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-Darwin-arm64.dmg"; }
+	function GetLinux32($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-Linux-i686.tar.xz"; }
+	function GetLinux64($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-Linux-x86_64.tar.xz"; }
+	function GetLinuxArm32($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-Linux-armv7l.tar.xz"; }
+	function GetLinuxArm64($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-Linux-aarch64.tar.xz"; }
 	function GetLangPack($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-template.ReaperLangPack"; }
 ?>

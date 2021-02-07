@@ -23,50 +23,42 @@ Requires <a href="http://www.reaper.fm/download.php">REAPER <?php echo GetReaper
 
 				<div class="one-third column info">
 					<center>
-						<a href="<?php print GetWin32("featured"); ?>">
-							<img src="images/win.gif" alt="Download Windows 32-bit" /><br />
-							<h3>Windows 32-bit</h3><br />
-						</a>
-						For REAPER 32-bit <?php echo GetReaperVersionStr("featured"); ?> or above<br />
-						Windows XP/Vista/7/8/10 or WINE<br />
+						<img src="images/win.gif" alt="Download Windows" /><br />
+						<h3>Windows</h3><br />
 <!--[if !(IE)]><!-->
 						&nbsp;<br />
-						<a href="<?php print GetWin32("featured"); ?>"><button type="button" class="learn-more">Download</button></a>
-						&nbsp;<br />
+						<a href="<?php print GetWin32("featured"); ?>"><button type="button" class="learn-more">Download x32</button></a>
+						<a href="<?php print GetWin64("featured"); ?>"><button type="button" class="learn-more">Download x64</button></a>
 <!--<![endif]-->
 					</center>
 				</div>
 				<div class="one-third column info">
 					<center>
-						<a href="<?php print GetWin64("featured"); ?>">
-							<img src="images/win.gif" alt="Download Windows 64-bit" /><br />
-							<h3>Windows 64-bit</h3><br />
-						</a>
-						For REAPER 64-bit <?php echo GetReaperVersionStr("featured"); ?> or above<br />
-						Windows XP/Vista/7/8/10 or WINE<br />
+						<img src="images/mac.gif" alt="OS X" /><br />
+						<h3>macOS</h3><br />
 <!--[if !(IE)]><!-->
 						&nbsp;<br />
-						<a href="<?php print GetWin64("featured"); ?>"><button type="button" class="learn-more">Download</button></a>
-						&nbsp;<br />
-<!--<![endif]-->
-					</center>
-				</div>
-				<div class="one-third column info">
-					<center>
-						<a href="<?php print GetOSX("featured"); ?>">
-							<img src="images/mac.gif" alt="OS X Universal Binary" /><br />
-							<h3>OS X Universal Binary</h3><br />
-						</a>
-						For REAPER 32/64-bit <?php echo GetReaperVersionStr("featured"); ?> or above<br />
-						OS X 10.5-10.11 32/64-bit<br />
-<!--[if !(IE)]><!-->
-						&nbsp;<br />
-						<a href="<?php print GetOSX("featured"); ?>"><button type="button" class="learn-more">Download</button></a>
-						&nbsp;<br />
+						<a href="<?php print GetOSX32("featured"); ?>"><button type="button" class="learn-more">Download x32</button></a>
+						<a href="<?php print GetOSX64("featured"); ?>"><button type="button" class="learn-more">Download x64</button></a>
+						<a href="<?php print GetOSXArm64("featured"); ?>"><button type="button" class="learn-more">Download ARM64</button></a>
 <!--<![endif]-->
 						<br />
 					</center>
 				</div>
+				<div class="one-third column info">
+					<center>
+						<img src="images/linux.png" alt="Download Linux" /><br />
+						<h3>Linux</h3><br />					
+<!--[if !(IE)]><!-->
+						&nbsp;<br />
+						<a href="<?php print GetLinux32("featured"); ?>"><button type="button" class="learn-more">Download x32</button></a>
+						<a href="<?php print GetLinux64("featured"); ?>"><button type="button" class="learn-more">Download x64</button></a>
+						<a href="<?php print GetLinuxArm32("featured"); ?>"><button type="button" class="learn-more">Download ARM32</button></a>
+						<a href="<?php print GetLinuxArm64("featured"); ?>"><button type="button" class="learn-more">Download ARM64</button></a>
+<!--<![endif]-->
+					</center>
+				</div>
+			
 			</div>
 		</div>
 	</div>
