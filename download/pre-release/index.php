@@ -1,6 +1,9 @@
 <?php
 function file_info($file)
 {
+  if(!file_exists($file))
+    return;
+
   $icons = [
     'dmg' => 'apple',
     'exe' => 'windows',
@@ -28,6 +31,7 @@ function size_format($size, $base = 1024)
 
 function print_listing($title, $files)
 {
+  $files = array_filter($files);
   $name_length = array_reduce($files, function($carry, $item) {
     return max(strlen($item['name']), $carry);
   }, strlen('Name')) + 1;
@@ -42,7 +46,7 @@ function print_listing($title, $files)
   echo str_pad('Name', $name_length);
   echo 'Modified' . str_repeat("\x20", 12);
   echo 'Size</strong><hr/>';
-  
+
   usort($files, function($a, $b) { return $a['name'] < $b['name'] ? -1 : 1; });
 
   foreach($files as $file) {
@@ -67,10 +71,12 @@ array_walk($files, function(&$file) { $file = file_info($file); });
 $builds = [];
 foreach($files as $file) {
   $matches = [];
-  if(!preg_match('/^sws-([0-9\.]+)-.+-([a-f0-9]+)\.[a-z\.]+$/', $file['name'], $matches))
+  if(!preg_match('/^sws-v?([0-9\.]+)(?:-[^-]+){0,2}(?:-([a-f0-9]+))?\.[a-z\.]+$/', $file['name'], $matches))
     continue;
 
-  $build_name = "v${matches[1]} ${matches[2]}";
+  $build_name = "v${matches[1]}";
+  if(!empty($matches[2]))
+    $build_name .= " ${matches[2]}";
   $builds[$build_name][] = $file;
 }
 
@@ -81,13 +87,16 @@ array_walk($builds, function(&$files) {
 uksort($builds, function($a, $b) use ($builds) {
   return $builds[$a][0]['time'] > $builds[$b][0]['time'] ? -1 : 1;
 });
+
+$is_bleeding = str_starts_with($_SERVER['REQUEST_URI'], '/download/pre-release');
+$title = $is_bleeding ? 'SWS Bleeding Edge Builds' : 'SWS Build Archive';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8"/>
   <meta name="robots" content="nofollow"/>
-  <title>SWS Bleeding Edge Builds</title>
+  <title><?= $title ?></title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <style>
@@ -108,12 +117,16 @@ uksort($builds, function($a, $b) use ($builds) {
   </style>
 </head>
 <body>
-  <h1>SWS Bleeding Edge Builds</h1>
+  <h1><?= $title ?></h1>
   <p>
+    <?php if($is_bleeding): ?>
     Generated straight from the master branch of the SWS git repository.
     Use the builds listed here at your own risk.
+    <?php else: ?>
+    Archive of previously released versions.
+    <?php endif; ?>
   </p>
-  <?php 
+  <?php
   date_default_timezone_set('UTC');
   print_listing('Latest', [
     file_info('SWS_Template.ReaperLangPack'),
