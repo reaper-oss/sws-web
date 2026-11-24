@@ -18,9 +18,13 @@ Latest stable version:
 Requires <a href="http://www.reaper.fm/download.php">REAPER <?php echo GetReaperVersionStr("featured"); ?></a> or above<br />
 </h2>
 <br />
+<a href="<?php print GetReaperPkg("featured"); ?>"><button type="button" class="package">Download ReaperPkg (all platforms)</button></a>
+<br />
 <br />
 </center>
 
+<details>
+				<summary>Show manual installers for REAPER older than version 7.86</summary>
 				<div class="one-third column info">
 					<center>
 						<img src="images/win.gif" alt="Download Windows" /><br />
@@ -58,12 +62,10 @@ Requires <a href="http://www.reaper.fm/download.php">REAPER <?php echo GetReaper
 <!--<![endif]-->
 					</center>
 				</div>
-			
+</details>
 			</div>
 		</div>
 	</div>
-
-
 
 	<!-- ABOUT -->
 	<div class="gallery-section">

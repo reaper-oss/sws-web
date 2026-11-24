@@ -68,4 +68,5 @@
 	function GetLinuxArm32($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-Linux-armv7l.tar.xz"; }
 	function GetLinuxArm64($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-Linux-aarch64.tar.xz"; }
 	function GetLangPack($dir) { return "download/".$dir."/sws-".GetVersion($dir)."-template.ReaperLangPack"; }
+	function GetReaperPkg($dir) { return "download/".$dir."/sws-".GetVersion($dir).".ReaperPkg"; }
 ?>
